@@ -584,7 +584,7 @@ p{
 /* Plans start */
 
 #plans {
-    background-color:#dfc49580;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Night-View.jpg) center / cover no-repeat;
   padding: 80px 0 130px 0;
 }
 
