@@ -1311,6 +1311,12 @@ input[type="number"]::-webkit-outer-spin-button {
   padding: 80px 0;
   background: #dfc49580;
 }
+.map-bg{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/3d-view-map.webp) center / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 @media screen and (max-width: 600px) {
     .db-btn{
         text-align: center;
