@@ -329,20 +329,20 @@
   </div>
         <div class="col-lg-7 d-flex align-items-center justify-content-center flex-column map-bg">
             <div class="pt-3 db-btn">
-                <button class="about-btn" fdprocessedid="hn9ao">Button 1</button>
+                <button class="about-btn" fdprocessedid="hn9ao" data-image="images/map-1.jpg">Button 1</button>
               </div>
               <div class="pt-3 db-btn">
-                <button class="about-btn" fdprocessedid="hn9ao">Button 2</button>
+                <button class="about-btn" fdprocessedid="hn9ao" data-image="images/map-2.jpg">Button 2</button>
               </div>
               <div class="pt-3 db-btn">
-                <button class="about-btn" fdprocessedid="hn9ao">Button 3</button>
+                <button class="about-btn" fdprocessedid="hn9ao" data-image="images/map-3.jpg">Button 3</button>
               </div>
               <div class="pt-3 db-btn">
-                <button class="about-btn" fdprocessedid="hn9ao">Button 4</button>
+                <button class="about-btn" fdprocessedid="hn9ao" data-image="images/map-4.jpg">Button 4</button>
               </div>
         </div>
         <div class="col-lg-5 m-0 p-0">
-          <img src="images/map-1.jpg" alt="" srcset="" class="img-fluid">
+          <img src="images/map-1.jpg" alt="" srcset="" class="img-fluid" id="dynamicImage">
         </div>
     </div>
 </div>
@@ -634,6 +634,13 @@
   <script>
     AOS.init();
   </script>
+  <script>
+    document.querySelectorAll('.about-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            document.getElementById('dynamicImage').src = this.getAttribute('data-image');
+        });
+    });
+</script>
 </body>
 
 </html>
