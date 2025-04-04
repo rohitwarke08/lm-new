@@ -1323,6 +1323,9 @@ input[type="number"]::-webkit-outer-spin-button {
 table{
         width: 50% !important;
     }
+th, td {
+    font-size : 30px !important;
+}
 @media screen and (max-width: 600px) {
     .db-btn{
         text-align: center;
@@ -1347,6 +1350,9 @@ table{
     table{
         width: 100% !important;
     }
+    th, td {
+    font-size : 20px !important;
+}
 }
 @keyframes modalanim {
   from {
