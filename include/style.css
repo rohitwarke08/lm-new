@@ -1338,6 +1338,9 @@ input[type="number"]::-webkit-outer-spin-button {
     .about-project img {
     margin-bottom: -60px;
     }
+    iframe{
+        height: 400px;
+    }
 }
 @keyframes modalanim {
   from {
