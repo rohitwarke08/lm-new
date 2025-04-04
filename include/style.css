@@ -1320,6 +1320,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .map-btn{
     width: 300px !important;
 }
+table{
+        width: 50% !important;
+    }
 @media screen and (max-width: 600px) {
     .db-btn{
         text-align: center;
